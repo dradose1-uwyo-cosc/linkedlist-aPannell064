@@ -1,12 +1,9 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# Adam Pannell
+## Homework #1
+## 02/05/26
 ## Worked with/sources 
-* example
-* example
-* example
-* example
+* I used https://gobyexample.com/errors to help me understand how to use errors
+  
 ## Project Quirks/ Things that don't work
-* example
-* example
-* example
+* As far as I can tell, everything works fine. It ran on the VM. 
+
