@@ -39,22 +39,22 @@ func main() {
 	fmt.Println("-------------")
 
 	stack := &ds.Stack{}
-	data, err := stack.Pop()
-	fmt.Println("Pop from empty stack: ", err)
+	sData, success := stack.Pop()
+	fmt.Println("Pop from empty stack: ", success)
 	stack.Push("first")
 	stack.Push("second")
 	stack.Push("third")
-	data, _ = stack.Pop()
-	println("Popped from stack:", data)
+	sData, success = stack.Pop()
+	println("Popped from stack:", sData)
 
 	fmt.Println("-------------")
 
 	queue := &ds.Queue{}
-	data, err = queue.Pop()
+	qData, err := queue.Pop()
 	fmt.Println("Pop from empty queue: ", err)
 	queue.Push("first")
 	queue.Push("second")
 	queue.Push("third")
-	data, _ = queue.Pop()
-	println("Popped from queue:", data)
+	qData, _ = queue.Pop()
+	println("Popped from queue:", qData)
 }
