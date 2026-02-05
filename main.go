@@ -1,15 +1,7 @@
-//[Your Name Here]
-//COSC 3750
-//[Date Here]
-//
-/*
-	Don't forget to run your go mod init command in your terminal
-	Review the assignment instructions for running your code
-	All the code you need to write should be put in the /ds/ package files
-	Uncomment the import statement for your module name
-	you can uncomment the tests in main as you go to test
-	The code in main is not an extensive test, you should add more and test your code as needed
-*/
+// Adam Pannell
+// COSC 3750
+// 02/04/2026
+
 package main
 
 import (
@@ -18,8 +10,6 @@ import (
 )
 
 func main() {
-	//fmt.Println("Only here so the import doesn't leave an error")
-
 	linkedlist := &ds.LinkedList{}
 	linkedlist.InsertAt(0, "first")
 	linkedlist.Remove("first")
