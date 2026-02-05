@@ -18,6 +18,7 @@ func main() {
 	fmt.Println("Try to remove from empty list: ", linkedlist.Remove("first"))
 	fmt.Println("Try to insert at invalid position: ", linkedlist.InsertAt(1, "first"))
 	fmt.Println("-------------")
+	
 	linkedlist.InsertAt(0, "first")
 	linkedlist.Insert("first")
 	linkedlist.Insert("first")
@@ -27,12 +28,15 @@ func main() {
 	linkedlist.Insert("fifth")
 	linkedlist.RemoveAt(4)
 	linkedlist.PrintList()
+	fmt.Println("List empty?", linkedlist.IsEmpty())
 	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
 	fmt.Println("-------------")
+	
 	fmt.Println("Remove beyond the scope: ", linkedlist.RemoveAt(10))
 	linkedlist.RemoveAll("first")
 	linkedlist.PrintList()
 	fmt.Println("-------------")
+	
 	linkedlist.Reverse()
 	linkedlist.PrintList()
 	fmt.Println("The size of the linked list is:", linkedlist.GetSize())
@@ -46,7 +50,6 @@ func main() {
 	stack.Push("third")
 	sData, success = stack.Pop()
 	println("Popped from stack:", sData)
-
 	fmt.Println("-------------")
 
 	queue := &ds.Queue{}
