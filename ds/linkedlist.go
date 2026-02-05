@@ -186,7 +186,6 @@ func (l *LinkedList) Reverse() {
 		current = next
 	}
 	l.Head = previous
-
 }
 
 func (l *LinkedList) PrintList() {
@@ -195,10 +194,8 @@ func (l *LinkedList) PrintList() {
 	// Traverse the list and print each node's data
 	for current != nil {
 		fmt.Print(current.data)
-		if current.Next != nil {
+		if current != l.Tail {
 			fmt.Print(" -> ")
-		} else {
-
 		}
 		current = current.Next
 	}

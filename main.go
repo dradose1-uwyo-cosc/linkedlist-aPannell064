@@ -16,6 +16,7 @@ func main() {
 	linkedlist.PrintList()
 	fmt.Println("List empty?", linkedlist.IsEmpty())
 	fmt.Println("Try to remove from empty list: ", linkedlist.Remove("first"))
+	fmt.Println("Try to insert at invalid position: ", linkedlist.InsertAt(1, "first"))
 	fmt.Println("-------------")
 	linkedlist.InsertAt(0, "first")
 	linkedlist.Insert("first")
